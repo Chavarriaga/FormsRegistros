@@ -1,0 +1,14 @@
+        <?php 
+        $query = " SELECT * FROM usuarios ";
+        $select_all_posts_query = mysqli_fetch_assoc($conexion,$query);
+
+        while($row = mysqli_fetch_assoc($select_all_posts_query)){
+
+            $nombre=$_POST['nombre'];
+            $apellido=$_POST['apellido'];
+            $direccion=$_POST['direccion'];
+            $telefono=$_POST['telefono'];
+            $correo_electronico=$_POST['correo_electronico'];
+            $tipo_usuario=$_POST['tipo_usuario'];
+     
+        ?>
